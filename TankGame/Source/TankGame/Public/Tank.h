@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
-#include "TankAimingComponent.h"
 #include "Tank.generated.h"
 
+//Forward Declaration
 class UTankBarrel;
+class UTankAimingComponent;
 
 UCLASS()
 class TANKGAME_API ATank : public APawn
@@ -15,9 +16,6 @@ class TANKGAME_API ATank : public APawn
 	GENERATED_BODY()
 
 public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 	void AimAt(FVector HitLocation);
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
