@@ -27,8 +27,8 @@ public:
 	
 	//TODO set turret reference
 private:
-	UTankBarrel* Barrel = nullptr;
-	UTankTurret* Turret = nullptr;
+	UTankBarrel* Barrel;// = nullptr;
+	UTankTurret* Turret;// = nullptr;
 
 	void MoveBarrelTowards(FVector AimDirection);
 		
